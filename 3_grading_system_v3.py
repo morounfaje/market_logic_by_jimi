@@ -1,9 +1,9 @@
 # P p ('') '' : $  {} _ "" ("")
 
 trades = [
-    {"symbol": "EURUSD", "pnl": 120}
-    {"symbol": "GBPUSD", "pnl": -80}
-    {"symbol": "XAUUSD", "pnl": 250}
+    {"symbol": "EURUSD", "pnl": 120},
+    {"symbol": "GBPUSD", "pnl": -80},
+    {"symbol": "XAUUSD", "pnl": 250},
     {"symbol": "USDJPY", "pnl": -50}
 ]
 
@@ -17,7 +17,7 @@ def total_pnl(*pnls):
 #default argument, risk 1% unless changed
 
 def position_size(balance, risk_pct = 1):
-    return balance * risk / 100
+    return balance * risk_pct / 100
 
 
 # filter() + lambda, keep winning trades
