@@ -47,9 +47,9 @@ while True:
     print(f"\n ---RESULT ({direction.upper()})---")
     print(f"Gross P&L: ${gross_pnl:,.2f}")
     print(f"Net P&L: ${net_pnl:,.2f}")
-    print(f"Return: ${pct:.1%}")
+    print(f"Return: {pct:.1%}")
     print(f"R:R Ratio: {rr:.2f}" if rr else "R:R Ratio: N/A(Invalid stop)")
-
+    print(f"Verdict: {verdict}")
 
 
 
