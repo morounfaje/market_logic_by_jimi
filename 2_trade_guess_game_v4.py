@@ -5,8 +5,8 @@ import random
 def get_difficulty():
     print("\nChoose Difficulty:")
     print(" 1 - Easy ($1 - $100, 10 guesses)")
-    print(" 2 - Easy ($1 - $500, 8 guesses)")
-    print(" 3 - Easy ($1 - $1000, 6 guesses)")
+    print(" 2 - Medium ($1 - $500, 8 guesses)")
+    print(" 3 - Hard ($1 - $1000, 6 guesses)")
 
     while True:
         choice = input("Enter 1, 2 or 3" ).strip()
@@ -51,7 +51,7 @@ while True:
         direction = "Try a lower number" if guess > secret else "Try a higher number"
         diff = abs(secret - guess)
         threshold = upper * 0.04
-        hint = "Hot" if diff <= threshold else "Warm" if diff <= threshold else "Cold"
+        hint = "Hot" if diff <= threshold else "Warm" if diff <= threshold * 2 else "Cold"
         print(f"{hint}, {direction}")
 
     games_played += 1
