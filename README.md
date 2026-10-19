@@ -56,7 +56,7 @@ A number-guessing game dressed as trading: guess a hidden P&L. Three difficulty 
 
 **Skills:** functions with return values, `random`, nested loops, `break`, session accumulators, `abs()`.
 
-**Next improvement:** validate non-numeric guesses, and separate the "warm" and "hot" distance thresholds.
+**Next improvement:** handle non-numeric input without crashing, using `try/except`.
 
 ---
 
@@ -100,4 +100,4 @@ A menu-driven trade logger. Log trades (long or short), view all trades, rank th
 
 ## About
 
-Built by Jimi, based in Nigeria, working toward a career in quantitative trading and algorithmic systems. I publish what I build as I build it, including the mistakes.
+Built by Jimi Yusuf, based in Nigeria, working toward a career in quantitative trading and algorithmic systems. I publish what I build as I build it, including the mistakes.
